@@ -1,0 +1,743 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");*/
+
+
+
+/*.navbar {*/
+/*    background-color: white;*/
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+/*    padding: 8px 12px;*/
+/*    webkit-box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.15);*/
+/*    top: 0;*/
+/*    z-index: 8;*/
+/*    height: 70px;*/
+/*    margin-bottom: 30px;*/
+/*    position: sticky;*/
+
+
+/*}*/
+
+/*.navbar_logo {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    font-size: 24px;*/
+/*    text-decoration: none;*/
+
+/*}*/
+/*.mp_navLogo {*/
+/*    text-decoration: none;*/
+/*    color: #000000;*/
+/*    margin-top: 10px;*/
+
+
+/*}*/
+/*.nav-link {*/
+/*    text-decoration: none;*/
+/*    color: #000000;*/
+
+
+/*}*/
+
+/*.navbar_menu {*/
+/*    display: flex;*/
+/*    font-weight: 20;*/
+/*    list-style: none;*/
+/*    padding-left: 0;*/
+/*    margin-right: auto; !* 나머지 요소를 오른쪽으로 정렬하기 위해 추가 *!*/
+/*    justify-content: flex-end;*/
+
+
+/*}*/
+
+/*.navbar_menu li {*/
+/*    padding: 8px 20px;*/
+/*}*/
+
+/*.navbar_menu li:hover {*/
+/*    background-color: #D6BBFF;*/
+/*    border-radius: 4px;*/
+/*}*/
+
+/*.navbar_icons {*/
+/*    list-style: none;*/
+/*    color: #646464;*/
+/*    display: flex;*/
+/*    padding-left: 0;*/
+/*}*/
+
+/*.navbar_icons li {*/
+/*    padding: 8px 12px;*/
+/*}*/
+
+/*.navbar _toogleBtn {*/
+/*    display: none;*/
+/*    position: absolute; !* 문서 흐름에서 나와서 배치*!*/
+/*    right: 32px;*/
+/*    font-size: 24px;*/
+/*    color: #d49466;*/
+
+/*}*/
+
+/*@media screen and (max-width: 768px) {*/
+/*    .navbar {*/
+/*        flex-direction: column; !*창이 어느정도 줄어들면 세로로 바꾼다*!*/
+/*        align-items: flex-start;*/
+/*        padding: 8px 12px;*/
+/*    }*/
+
+
+/*    .navbar_menu {*/
+/*        display: none; !*창이 줄어들었을때 없어짐*!*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .navbar_menu li {*/
+/*        width: 100%;*/
+/*        text-align: center;*/
+/*    }*/
+
+/*    .navbar_icons {*/
+/*        display: none; !*창이 줄어들었을때 없어짐*!*/
+/*        justify-content: center;*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    form > .navbar _toogleBtn {*/
+/*        display: block;*/
+/*    }*/
+
+/*    .navbar_menu.active,*/
+/*    .navbar_icons.active {*/
+/*        display: flex;*/
+/*    }*/
+/*}*/
+
+/** {*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    font-family: 'Black Han Sans', sans-serif;*/
+/*    font-family: 'Gothic A1', sans-serif;*/
+/*    font-family: 'Nanum Gothic', sans-serif;*/
+/*    font-family: 'Noto Sans KR', sans-serif;*/
+/*    font-family: 'Roboto', sans-serif;*/
+/*}*/
+
+/*div {*/
+/*    border-radius: 16px;*/
+/*}*/
+
+/*body {*/
+/*    background-color:  #f3f5f7;*/
+/*    position: relative;*/
+
+/*}*/
+
+/*.containerForm {*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+
+/*}*/
+
+/*!*.banner, .middle{*!*/
+/*!*    height: 1000px; !* 화면의 전체 높이를 차지하도록 설정 *!*!*/
+/*!*    width: 100vw;*!*/
+/*!*}*!*/
+
+/*.banner {*/
+/*    width: 20%;*/
+/*    height: 460px;*/
+/*    float: left;*/
+/*    background-color: white;*/
+/*    margin: 10px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+/*    position: sticky;*/
+/*    top: 83px; !* Position the banner at the top of its container *!*/
+/*}*/
+
+
+/*.banner .content {*/
+/*    text-align: center;*/
+/*    padding: 20px;*/
+/*    margin: 0;*/
+/*}*/
+
+/*.banner i {*/
+/*    font-size: 24px;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+/*.banner h2 {*/
+/*    display: block;*/
+/*    margin-bottom: 50px;*/
+/*    color: #333;*/
+/*    font-weight: bold;*/
+/*    font-size: 25px;*/
+/*    text-decoration: none;*/
+/*    transition: color 0.3s ease;*/
+/*}*/
+
+/*.banner a {*/
+/*    display: block;*/
+/*    margin-bottom: 50px;*/
+/*    color: #333;*/
+/*    font-weight: bold;*/
+/*    font-size: 20px;*/
+/*    text-decoration: none;*/
+/*    transition: color 0.3s ease;*/
+/*}*/
+
+/*.banner a:hover {*/
+/*    color: #555;*/
+/*}*/
+
+/*.banner a::before {*/
+/*    content: "\25B6";*/
+/*    margin-right: 5px;*/
+/*    transform: translateY(-2px);*/
+/*    font-size: 12px;*/
+/*    display: inline-block;*/
+/*    transition: transform 0.3s ease;*/
+/*}*/
+
+/*.banner a:hover::before {*/
+/*    transform: translateY(-2px) rotate(90deg);*/
+/*}*/
+
+/*.middle {*/
+/*    width: 40%;*/
+/*    float: left;*/
+/*    background-color: #f3f5f7;*/
+/*    margin-right: 15px; !* 오른쪽에 마진 추가 *!*/
+/*}*/
+
+/*.middle > .myCourse {*/
+/*    height: 60%;*/
+/*    background-color: white;*/
+/*    margin-top: 10px;*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+/*}*/
+/*.myCourse >.cs_title {*/
+/*    width: 100%;*/
+/*    height: 40px;*/
+/*    padding-left: 50px;*/
+/*    padding-top: 30px;*/
+/*}*/
+
+/*.card {*/
+/*    width: 250px;*/
+/*    height: 350px;*/
+/*    margin: 20px;*/
+/*    border-radius: 8px;*/
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+/*    overflow: hidden;*/
+/*    transition: transform 0.3s ease;*/
+/*}*/
+
+/*.card:hover {*/
+/*    transform: translateY(-5px);*/
+/*}*/
+
+/*.card img {*/
+/*    width: 100%;*/
+/*    height: 70%;*/
+/*    object-fit: cover;*/
+/*}*/
+
+/*.card-content {*/
+/*    padding: 20px;*/
+/*    width: 50%;*/
+/*    height: 30%;*/
+/*    !*background-color: #f2f2f2;*!*/
+/*}*/
+
+/*.card-content h3 {*/
+/*    margin-top: 0;*/
+/*}*/
+
+/*.card-content p {*/
+/*    margin-bottom: 0;*/
+/*}*/
+
+/*.middle > .myList {*/
+/*    height: 400px;*/
+/*    background: white;*/
+/*    margin-top: 20px;*/
+/*    padding: 30px 30px 0px 30px;*/
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+
+/*}*/
+
+/*.slick-img {*/
+/*    position: relative;*/
+/*}*/
+
+/*.slick-img img {*/
+/*    display: block;*/
+/*    overflow: hidden;*/
+/*    height: 300px;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.slick-img + .slick-img {*/
+/*    margin-left: 0.5rem;*/
+/*}*/
+
+/*.slick-img:before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background-color: rgba(0, 0, 0, 0.5); !* 겹치는 부분의 배경색을 조정하세요 *!*/
+/*    opacity: 0;*/
+/*    transition: opacity 0.3s ease;*/
+/*}*/
+
+/*.slick-img:hover:before {*/
+/*    opacity: 1;*/
+/*}*/
+
+
+/*.mySlides {*/
+/*    display: none;*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*}*/
+
+
+/*#map {*/
+/*    width: 35%;*/
+/*    height: 550px;*/
+/*    padding: 5px;*/
+/*    border-radius: 16px;*/
+/*    margin-left: 20px; !* 왼쪽에 마진 추가 *!*/
+/*}*/
+/*.mp_rank {*/
+/*    position: absolute;*/
+/*    width: 610px;*/
+/*    height: 220px;*/
+/*    right: 10px;*/
+/*    bottom: 10px;*/
+/*    background-color: black;*/
+/*    z-index: 4;*/
+/*    margin-right: 20px;*/
+
+/*}*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 8px 12px;
+    webkit-box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.15);
+    top: 0;
+    z-index: 8;
+    height: 70px;
+    margin-bottom: 30px;
+    position: sticky;
+}
+
+.navbar_logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.mp_navLogo {
+    text-decoration: none;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbar_menu {
+    display: flex;
+    font-weight: 20;
+    list-style: none;
+    padding-left: 0;
+    margin-right: auto;
+    justify-content: flex-end;
+}
+
+.navbar_menu li {
+    padding: 8px 20px;
+}
+
+.navbar_menu li:hover {
+    background-color: #d6bbff;
+    border-radius: 4px;
+}
+
+.navbar_icons {
+    list-style: none;
+    color: #646464;
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar_icons li {
+    padding: 8px 12px;
+}
+
+.navbar_toogleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: #d49466;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 12px;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    form > .navbar_toogleBtn {
+        display: block;
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active {
+        display: flex;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    border-radius: 16px;
+}
+
+body {
+    background-color: #f3f5f7;
+    position: relative;
+}
+
+.containerForm {
+    /*width: 100vw;*/
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 40% 35%;
+    grid-gap: 15px;
+    padding: 10px 0 10px 10px;
+    overflow-x: hidden;
+}
+
+.banner {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 81px;
+    /* Position the banner at the top of its container */
+}
+
+.banner .content {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.banner i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.banner h2 {
+    display: block;
+    margin-bottom: 50px;
+    color: #333;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.banner a {
+    display: block;
+    margin-bottom: 50px;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #d6bbff;
+}
+
+.banner a:hover {
+    color: #555;
+}
+
+/*.banner a::before {*/
+/*    content: "\25B6";*/
+/*    margin-right: 5px;*/
+/*    transform: translateY(-2px);*/
+/*    font-size: 12px;*/
+/*    display: inline-block;*/
+/*    transition: transform 0.3s ease;*/
+/*}*/
+
+.banner a:hover::before {
+    transform: translateY(-2px) rotate(90deg);
+}
+
+.middle {
+    background-color: #f3f5f7;
+}
+
+.middle>.myCourse {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.myCourse>.cs_title {
+    width: 100%;
+    height: 40px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.card {
+    width: 250px;
+    height: 330px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    width: 50%;
+    height: 30%;
+}
+
+.card-content h3 {
+    margin-top: 0;
+}
+
+.card-content p {
+    margin-bottom: 0;
+}
+
+.middle>.myList {
+    background: white;
+    height: 400px;
+    margin-top: 20px;
+    padding: 30px 30px 0px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.slick-img {
+    position: relative;
+}
+
+.slick-img img {
+    display: block;
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+}
+
+.slick-img+.slick-img {
+    margin-left: 0.5rem;
+}
+
+.slick-img:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.slick-img:hover:before {
+    opacity: 1;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+#map {
+    width: 550px;
+    height: 870px;
+    padding: 5px;
+    border-radius: 16px;
+    margin-left: 10px;
+}
+
+.mp_rank {
+    width: 550px;
+    height: 300px;
+    right: 10px;
+    bottom: 10px;
+    background-color: white;
+    margin: 10px 0 0 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mp_rank h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #222;
+    background-color: #d6bbff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.mp_rank table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mp_rank th,
+.mp_rank td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.mp_rank th {
+    background-color: #d6bbff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.mp_rank tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.mp_rank tr:hover {
+    background-color: #e5e5e5;
+    transition: background-color 0.3s;
+}
+
+.mp_rank td:first-child {
+    font-weight: bold;
+}
+
+.mp_rank td.rank {
+    color: #ffa500;
+}
+
+.mp_rank td.city {
+    font-weight: bold;
+}
+
+.mp_rank td.points {
+    font-weight: bold;
+    color: #00ff00;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f5f7;
+}
+
+.containerForm {
+    display: grid;
+    grid-template-columns: 20% 40% 35%;
+    grid-gap: 15px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .containerForm {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+        border-radius: 16px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 83px;
+    }
+
+    .middle {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #map {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
